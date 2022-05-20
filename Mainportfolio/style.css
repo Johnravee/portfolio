@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*Navigation  */
+header{
+  
+    width: 100%;
+    border-bottom: 0.5px solid rgb(216, 215, 215);
+    height: 2cm;
+    box-shadow: 0px 3px 24px -13px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 24px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 24px -13px rgba(0,0,0,0.75);
+}
+
+nav .menu{
+    display: flex;
+    justify-content: center;
+ align-items: center;
+    list-style: none;
+}
+
+.menu li{
+
+ padding: 10px 40px 40px 0;
+ text-transform: uppercase;
+}
+
+.menu li .nav-link{
+color: #000;
+font-size: 18px;
+text-align: center;
+
+
+}
+
+.menu li .nav-link:hover{
+    color: skyblue;
+    border-bottom: 3px solid skyblue ;
+}
+
+
+/* Home */
+
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+     
+}
+
+.cards{
+    border: 1px solid rgb(214, 213, 213);
+    padding: 60px 80px ;
+  margin:5%  15%;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+.cards .portfolio{
+  height: 40px;
+  width: 109px;
+  margin-top: 10px;
+  background-color: rgb(27, 61, 230);;
+  border: none;
+  cursor: pointer;
+}
+
+.cards .portfolio a{
+color: #fff;
+font-size: 18px;
+text-decoration: none;
+}
+
+.cards .portfolio:hover{
+    background-color: rgb(84, 105, 210);
+    transform: scale(1.1);
+}
+
+
+
+.img{
+    margin-top: 3cm;
+}
+
+/* about */
+.about{
+    height: 100vh;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+    align-items: center;
+ 
+}
+
+.profile >img{
+   height: 500px;
+   width: 300px;
+   border-radius: 100px;
+   margin-right: 2cm;
+   margin-left: 1cm;
+}
+
+.biography{
+    text-align: center;
+    margin-right: 50px;
+}
+
+    
+
+.skills h3{
+    margin-top: 1cm;
+   
+}
+
+.skills span img{
+height: 200px;
+width: 300px;
+}
+
+/* Portfolio */
+
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 180vh;
+ 
+   
+}
+
+.ul{
+  
+    cursor: pointer;
+}
+.port-img{
+    height: 300px;
+    width: 500px;
+    border-radius: 25px;
+    padding: 5px;
+
+}
+
+.portfolio ul li{
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 10px;
+    border-radius: 50px;
+    
+
+}
+.portfolio ul li a{
+    color: white;
+}
+
+.ul li:hover{
+transform: scale(1.02);
+
+
+}
+
+
+h2{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+hr{
+    width: 50%;
+    background-color: skyblue;
+padding: 1px;
+}
+
+.footer-content{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   align-items: center;
+
+
+ 
+    
+}
+
+.inputs{
+    margin-left: 4cm;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 40px;
+    border-radius: 20px;
+
+}
+
+.social-links{
+margin-left: 5cm;
+}
+
+.social-links a{
+    margin: 30px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer-contain{
+    border-top: 1px solid rgb(240, 240, 240);
+    height: 70vh;
+}
+
+.footer-contain h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.copy{
+ 
+   opacity: 0.2;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: black;
+   
+}
+
+.showmore{
+    margin-bottom:50px ;
+}
+
+.showmore a{
+    
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.button{
+    padding: 10px 20px;
+    background-color: rgb(92, 89, 84);
+    border: none;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '→ ';
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
+/* Mobile Query */
+
+@media  (max-width: 800px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        
+    }
+
+
+
+    .hamburger{
+        display: block;
+        margin-left: 9cm;
+         padding-top: 20px;
+         padding-right: 20px;
+        
+        
+      
+         }
+     
+         .hamburger.active .bar:nth-child(2){
+             opacity: 0;
+            
+         }
+         .hamburger.active .bar:nth-child(1){
+             transform: translateY(8px) rotate(45deg);
+           
+         }
+     
+         .hamburger.active .bar:nth-child(3){
+             transform: translateY(-8px) rotate(-45deg); 
+            
+         }
+     
+         .menu{
+             position: fixed;
+             display: flex;
+            right: -100%;
+             flex-direction: column;
+         background-color:whitesmoke;
+             width: 100%;
+             text-align: center;
+            height: 100%;
+           
+         }
+     
+         .menu.active{
+             right: 0;
+             transition: 0.8s; 
+            
+         }
+         
+           
+       
+         .menu li .nav-link{
+             color: black;
+             border-radius: 20px; 
+             }
+
+         .menu li .nav-link:hover{
+           
+            background-color: rgb(65, 64, 64);
+          
+        
+           
+        }
+
+       
+    .about{
+        height: 200vh;
+     display: flex;
+    
+    }
+
+    
+
+    .biography{
+        margin-left: 40px;
+    }
+    
+
+    .portfolio{
+        padding: 70px;
+        height: 330vh;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .portfolio ul li img{
+        height: 300px;
+        width: 300px;
+        margin: 0;
+    }
+    
+.profile img{
+ margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+    .img{
+    display: none;
+    margin: 0;
+    }
+
+.footer-content{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+.inputs{
+margin-left: 1cm;
+
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4cm;
+ 
+}
+
+.copy{
+    display: none;
+}
+
+}
+
+
