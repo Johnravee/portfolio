@@ -1,0 +1,143 @@
+.Content {
+    background-color: #111;
+    height: auto;
+}
+
+.Content>h1 {
+    font-size: 7em;
+    letter-spacing: 2px;
+    width: 25%;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    color: #f5f5f5;
+    font-family: sans-serif;
+    border-radius: 5px;
+    padding: 50px;
+
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.imgs {
+    width: 600px;
+    height: 300px;
+    margin: 30px;
+    border-radius: 2px;
+    transform: scale(1);
+    overflow: hidden;
+}
+
+.container>.imgs>a>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.imgs:hover a img {
+    transform: scale(1.1);
+}
+
+/* Banner */
+.name {
+    position: absolute;
+    color: #e2e2e2;
+    background-color: #010101;
+    top: 5%;
+    left: 3%;
+    border-radius: 5px;
+    width: auto;
+    padding: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: bold;
+    z-index: 1;
+
+}
+
+.number {
+    position: relative;
+    color: #e2e2e2;
+    left: 3%;
+    bottom: 25%;
+    border-radius: 5px;
+    width: 20%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Mobile */
+ @media (min-width:320px) and (max-width:480px){
+    .Content {
+            height: auto;
+            width: 100%;
+        }
+    
+        .Content>h1 {
+            font-size: 100px;
+    
+            text-align: center;
+            padding: 40px 0 40px 0;
+        }
+ }
+
+  /*  Media Query for low resolution  Tablets, Ipads */
+  @media screen and (min-width:480px) and (max-width: 768px) {
+  
+    /* Content */
+      .Content {
+          height: auto;
+          width: 100%;
+      }
+
+      .Content>h1 {
+          font-size: 6rem;
+          text-align: center;
+          padding: 40px 0 40px 0;
+      }
+    }
+
+ /* Mobile Landscape */
+@media screen and (orientation: landscape) and (max-width:867px){
+/* Content */
+    .Content {
+        height: auto;
+        width: 100%;
+    }
+
+    .Content>h1 {
+        font-size: 100px;
+
+        text-align: center;
+        padding: 40px 0 40px 0;
+    }
+
+}
+
+ /* Media Query for Tablets Ipads portrait mode */
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .Content {
+            height: auto;
+            width: 100%;
+        }
+    
+        .Content>h1 {
+            font-size: 100px;
+            text-align: center;
+            padding: 40px 0 40px 0;
+        }
+
+  }

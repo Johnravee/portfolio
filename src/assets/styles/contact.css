@@ -1,0 +1,229 @@
+.contact {
+    height: 80vh;
+    width: 100%;
+    background-color: #111;
+}
+
+.contact>h1 {
+    font-size: 7em;
+    letter-spacing: 2px;
+    width: 45%;
+    position: relative;
+    left: 5%;
+    top: 10%;
+    padding: 10px;
+    color: #f5f5f5;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+.container>.decr {
+    padding: 50px;
+    width: 50%;
+    height: 50%;
+    background-color: transparent;
+    margin: 100px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+}
+
+.contact>.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.decr>h1 {
+    margin: 20px 0 1cm 0;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.decr>p {
+
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.decr>p>a {
+    color: #fff;
+}
+
+/* Mobile */
+@media (min-width:320px) and (max-width:480px){
+    .contact {
+            height: 100vh;
+        }
+    
+        .contact>h1 {
+            font-size: 50px;
+            letter-spacing: 2px;
+            width: 0%;
+            position: relative;
+            left: 0%;
+            top: 10%;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    
+        .container>.decr {
+            padding: 50px;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            margin: 70px 10px 10px 10px;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+            
+        }
+    
+        .decr>h1 {
+            width: 100%;
+            font-size: 30px;
+            font-family: sans-serif;
+            color: #fff;
+        }
+    
+        .decr>p {
+    
+            font-size: 25px;
+            font-family: sans-serif;
+            color: #fff;
+        }
+}
+
+/* Landscape */
+@media screen and (min-width: 702px) and (max-width:867px){
+    .contact {
+            height: 150vh;
+            width: 100%;
+        }
+    
+        .contact>h1 {
+            font-size: 70px;
+            letter-spacing: 2px;
+            width: 0%;
+            position: relative;
+            left: 0%;
+            top: 10%;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    
+        .container {
+            padding: 20px;
+        }
+    
+        .container>.decr {
+            padding: 50px;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            margin: 70px 10px 10px 10px;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+        }
+    
+        .decr>h1 {
+            width: 100%;
+            font-size: 30px;
+            font-family: sans-serif;
+            color: #fff;
+        }
+    
+        .decr>p {
+    
+            font-size: 25px;
+            font-family: sans-serif;
+            color: #fff;
+        }
+}
+
+
+/*  Media Query for low resolution  Tablets, Ipads */
+@media (min-width:480px) and (max-width: 768px){
+    .contact {
+            height: 50vh;
+            width: 100%;
+        }
+    
+        .contact>h1 {
+            font-size: 70px;
+            letter-spacing: 2px;
+            width: 0%;
+            position: relative;
+            left: 0%;
+            top: 10%;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    
+        .container {
+            padding: 20px;
+        }
+    
+        .container>.decr {
+            padding: 50px;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            margin: 70px 10px 10px 10px;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+        }
+    
+        .decr>h1 {
+            width: 100%;
+            font-size: 30px;
+            font-family: sans-serif;
+            color: #fff;
+        }
+    
+        .decr>p {
+    
+            font-size: 25px;
+            font-family: sans-serif;
+            color: #fff;
+        }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+ @media (min-width: 768px) and (max-width: 1024px){
+    .contact {
+            height: auto;
+            width: 100%;
+            background-color: #111;
+        }
+    
+        .contact>h1 {
+            font-size: 7rem;
+            letter-spacing: 2px;
+            width: 45%;
+            position: relative;
+            left: 5%;
+            top: 20%;
+            padding: 20px;
+            font-family: sans-serif;
+            border-radius: 5px;
+        }
+    
+        .container>.decr {
+            padding: 50px;
+            width: 100%;
+            height: 50%;
+            background-color: transparent;
+            margin: 100px;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.64);
+            color: #fff;
+        }
+ }

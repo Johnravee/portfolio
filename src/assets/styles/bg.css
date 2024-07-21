@@ -1,0 +1,159 @@
+.page-title{
+    font-size: 7em;
+        letter-spacing: 1.2px;
+        
+        color: #f5f5f5;
+        font-family: sans-serif;
+        padding: 50px;
+        padding-left: 8rem;
+        background-color: #111;
+        width: 100%;
+}
+
+
+.con {
+    width: 100%;
+    padding: 35px 10%;
+    background-color: #111;
+    /* Black background */
+    color: #ffffff;
+    /* White text for readability */
+}
+
+main.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.col header.title {
+    font-family: sans-serif;
+    color: #f5f5f5;
+
+    padding: 0px 0px 20px 30px;
+    background-color: transparent;
+}
+
+.col .contents {
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+    /* Light grey border */
+}
+
+.col .contents .box {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #444444;
+    /* Darker border for better contrast */
+    background-color: #222222;
+    /* Dark grey background for the boxes */
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+    color: #ffffff;
+    /* Ensure text is white for readability */
+}
+
+.col .contents .box:hover {
+    box-shadow: 0px 3px 12px 0px #555555;
+    /* Slightly lighter shadow */
+    border: 1px solid #555555;
+    /* Slightly lighter border on hover */
+}
+
+.col .contents .box::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    /* Green dot */
+    border: 2px solid #ffffff;
+    /* White border to stand out */
+}
+
+.box h4 {
+    position: relative;
+    color: #11a372;
+    /* Green color for headers */
+}
+
+.box h3 {
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: sans-serif;
+    color: #ffffff;
+    /* White text */
+}
+
+.box p {
+    line-height: 1.2;
+    color: #cccccc;
+    /* Light grey for less emphasis */
+    font-size: .9rem;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.title-cert {
+    background-color: #111;
+    font-family: sans-serif;
+    font-size: 3rem;
+   
+}
+
+
+.view-cert {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.view-cert:hover span {
+    padding-left: 10px;
+    transition: .5s;
+}
+
+
+/* Mobile */
+ @media (min-width:320px) and (max-width:480px) {
+    main.row {
+        grid-template-columns: 1fr;
+    }
+
+    .row .col:nth-child(2) {
+        margin-top: 30px;
+    }
+
+.page-title {
+    font-size: 3em;
+    letter-spacing: 1.2px;
+    color: #f5f5f5;
+    font-family: sans-serif;
+    padding: 50px;
+    padding-left: 2rem;
+    background-color: #111;
+    width: 100%;
+    border: none;
+}
+
+}
+
+/* Landascape */
+ @media screen and (min-width: 702px) and (max-width:867px){
+    .page-title {
+            font-size: 5em;
+            letter-spacing: 1.2px;
+            color: #f5f5f5;
+            font-family: sans-serif;
+            padding: 50px;
+            padding-left: 2rem;
+            background-color: #111;
+            width: 100%;
+            border: none;
+        }
+ }
