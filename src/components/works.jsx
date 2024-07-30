@@ -1,8 +1,9 @@
-import work1 from '../assets/images/work1.png'
-import work2 from '../assets/images/work2.png'
-import work3 from '../assets/images/work3.png'
-import work4 from '../assets/images/work4.png'
-import '../assets/styles/wrks.css'
+import work1 from '../assets/images/work1.png';
+import work2 from '../assets/images/work2.png';
+import work3 from '../assets/images/Baranggaymanagement.png';
+import work4 from '../assets/images/work4.png';
+import '../assets/styles/wrks.css';
+
 export default function Works() {
   return (
     <section className="Content">
@@ -27,9 +28,9 @@ export default function Works() {
 
 
         <div className="imgs">
-          <div className="name">INVENTORY SYSTEM</div>
-          <a href="https://github.com/Johnravee/Inventory-sys" target='_blank'>
-            <img src={work3} alt="INVENTORY SYSTEM" />
+          <div className="name">BARANGAY SAN ISIDRO REQUIREMENT REQUEST SYSTEM</div>
+          <a href="https://github.com/Johnravee/BARANGGAY_INFORMATION_MANAGEMENT" target='_blank'>
+            <img src={work3} alt="BARANGAY SAN ISIDRO REQUIREMENT REQUEST SYSTEM" />
           </a>
           <div className="number">03</div>
         </div>
@@ -44,5 +45,5 @@ export default function Works() {
 
       </div>
     </section>
-  )
+  );
 }

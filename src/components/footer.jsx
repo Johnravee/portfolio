@@ -22,7 +22,7 @@ export default function Footer(){
                 <div className="f_link">
                     <a className="foot_link" href="https://www.linkedin.com/in/johrave-mimay-740a06237/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                     <a className="foot_link" href="https://github.com/Johnravee" target = "_blank"><i className="fa-brands fa-github"></i></a>
-                    <a href="https://medium.com/@johnravemimayn" target="_blank" ><i class="bi bi-medium"></i></a>
+                    <a href="https://medium.com/@johnravemimayn" target="_blank" ><i className="bi bi-medium"></i></a>
                 </div> 
             </div>
         </footer>
